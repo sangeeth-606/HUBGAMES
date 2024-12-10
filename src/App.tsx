@@ -1,13 +1,15 @@
 import { Button, ChakraProvider, Grid, GridItem } from "@chakra-ui/react";
 import theme from "./theme/theme";
 import { ThemeToggle } from "./components/ThemeToggle";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <ChakraProvider theme={theme}>
       <Grid templateAreas={`"nav nav" "aside main"`}>
-        <GridItem area="nav" bg="coral">
+        <GridItem area="nav" >
           {" "}
-          Nav
+          <Navbar />
+          
         </GridItem>
         <GridItem area="aside" bg="blue.500">
           {" "}
