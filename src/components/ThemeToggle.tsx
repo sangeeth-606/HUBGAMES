@@ -10,7 +10,7 @@ export const ThemeToggle = () => {
       icon={colorMode === "dark" ? <Sun size={20} /> : <Moon size={20} />}
       onClick={toggleColorMode}
       position="fixed"
-      top={4}
+      top={3}
       right={4}
       size="lg"
       variant="ghost"

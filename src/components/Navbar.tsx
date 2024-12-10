@@ -1,12 +1,14 @@
 import { HStack, Image } from "@chakra-ui/react"
 import logo from "../asset/logo.webp"
+import { ThemeToggle } from "./ThemeToggle"
 
 
 const Navbar = () => {
   return (
-    <HStack>
+    <HStack justifyContent="space-between" padding="10px">
         <Image src={logo} boxSize="60px" />
-        <h3>NavBar</h3>
+        
+        <ThemeToggle />
     </HStack>
   )
 }
