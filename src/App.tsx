@@ -17,7 +17,7 @@ function App() {
           {" "}
           Aside
         </GridItem>
-        <GridItem area="main" bg="green.500">
+        <GridItem area="main" >
           {" "}
           <GameCards/>
         </GridItem>
