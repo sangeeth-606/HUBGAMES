@@ -1,7 +1,9 @@
 import {  ChakraProvider, Grid, GridItem } from "@chakra-ui/react";
 import theme from "./theme/theme";
+import GameCards from "./components/GameCards";
 // import { ThemeToggle } from "./components/ThemeToggle";
 import Navbar from "./components/Navbar";
+
 function App() {
   return (
     <ChakraProvider theme={theme}>
@@ -17,7 +19,7 @@ function App() {
         </GridItem>
         <GridItem area="main" bg="green.500">
           {" "}
-          Main
+          <GameCards/>
         </GridItem>
       </Grid>
     </ChakraProvider>
