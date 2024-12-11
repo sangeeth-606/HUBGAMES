@@ -13,7 +13,7 @@ const GameCards = () => {
       <SimpleGrid columns={ { sm:1 , md:2 , lg:3 , xl:4 } } padding={10} spacing={10} overflow="hidden" >
         {games.map((game) => (
           <GameBox key={game.id} game={game}/>
-        ))}
+        ))} 
       </SimpleGrid >
     </>
   );
