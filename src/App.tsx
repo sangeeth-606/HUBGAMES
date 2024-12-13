@@ -8,13 +8,16 @@ import GenreList from "./components/GenreList";
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Grid templateAreas={`"nav nav" "aside main"`}>
+      <Grid templateAreas={{
+        base: `"nav" "main"`,
+        lg: `"nav nav" "aside main"`
+      }}>
         <GridItem area="nav" >
           {" "}
           <Navbar />
           
         </GridItem>
-        <GridItem area="aside" bg="blue.500">
+        <GridItem area="aside" paddingX={5} display={{ base: 'none', lg: 'block' }}>
           {" "}
           <GenreList/>
         </GridItem>
