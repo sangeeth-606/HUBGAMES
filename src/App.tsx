@@ -1,11 +1,14 @@
 import {  ChakraProvider, Grid, GridItem } from "@chakra-ui/react";
 import theme from "./theme/theme";
 import GameCards from "./components/GameCards";
-// import { ThemeToggle } from "./components/ThemeToggle";
 import Navbar from "./components/Navbar";
 import GenreList from "./components/GenreList";
+import { useState } from "react";
+import { Genre } from "./hooks/useGenre";
 
 function App() {
+
+  const [selectedGenre ,setSelectedGenre] = useState<Genre | null >(null);
   return (
     <ChakraProvider theme={theme}>
       <Grid templateAreas={{
@@ -19,7 +22,7 @@ function App() {
         </GridItem>
         <GridItem area="aside" paddingX={5} display={{ base: 'none', lg: 'block' }}>
           {" "}
-          <GenreList/>
+          <GenreList  onSelectGenre={(genre)=>setSelectedGenre(genre)} />
         </GridItem>
         <GridItem area="main" >
           {" "}

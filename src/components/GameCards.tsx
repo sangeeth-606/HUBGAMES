@@ -4,8 +4,11 @@ import { SimpleGrid } from "@chakra-ui/react";
 import useGames from "../hooks/useGames";
 import GameBox from "./GameBox";
 import GameSkeletos from "./GameSkeletos";
+// import { Genre } from "../hooks/useGenre";
 
-const GameCards = () => {
+
+
+const GameCards = (  ) => {
   const { data, error, isLoading } = useGames();
 
   return (
