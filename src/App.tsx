@@ -3,6 +3,7 @@ import theme from "./theme/theme";
 import GameCards from "./components/GameCards";
 // import { ThemeToggle } from "./components/ThemeToggle";
 import Navbar from "./components/Navbar";
+import GenreList from "./components/GenreList";
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
         </GridItem>
         <GridItem area="aside" bg="blue.500">
           {" "}
-          Aside
+          <GenreList/>
         </GridItem>
         <GridItem area="main" >
           {" "}
